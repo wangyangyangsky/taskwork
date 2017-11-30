@@ -2,7 +2,7 @@ const practice = require("../practice/practice-1");
 
 describe("practice", function () {
     it("99bottle", function () {
-        let result = practice();
+        var result = practice();
         expect(result).toEqual(
             "99 bottles of beer on the wall, 99 bottles of beer.\n" +
             "Take one down and pass it around, 98 bottles of beer on the wall.\n" +
