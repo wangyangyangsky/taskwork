@@ -2,7 +2,7 @@
 
 function average_uneven(collection) {
 
-  //在这里写入代码
+
     var A = [];
     var sum = 0;
     var ave,i;
@@ -13,11 +13,11 @@ function average_uneven(collection) {
     		A.push(collection[i]);
     	}
     }
-    
+
     A.forEach(function (value) {
-         
+
             sum += value;
-     
+
     });
 
     ave = sum/A.length;

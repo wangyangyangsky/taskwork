@@ -8,7 +8,8 @@ describe('pos', function () {
     var result = [];
     var free = [];
     var inputsall = [];
-
+    allItems = datbase.loadAllItems();
+    promotions = datbase.loadPromotions();
     beforeEach(function () {
         allItems = datbase.loadAllItems();
         inputs = [
@@ -40,6 +41,16 @@ describe('pos', function () {
         var result1 =  [
             {name: '雪碧', num: 1, unit: '瓶', price: 3},
             {name: '方便面', num: 1, unit: '袋', price: 4.5}
+        ];
+        var result =  [
+            {barcode: 'ITEM000001', num: 5},
+            {barcode: 'ITEM000003', num: '2'},
+            {barcode: 'ITEM000005', num: 3}
+        ];
+        var inputsall =  [
+            {barcode: 'ITEM000001', num: 5},
+            {barcode: 'ITEM000003', num: '2'},
+            {barcode: 'ITEM000005', num: 3}
         ];
 
 
