@@ -18,7 +18,7 @@ describe('taxi fee', function () {
 
     it("sumfee",function(){
         var km = 5;
-        var result = 9 ;
+        var result = 9.4 ;
         var sfee = 1;
         var fee = main.Fee(sfee,km)
         expect(fee).toEqual(result);
