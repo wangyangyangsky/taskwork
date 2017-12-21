@@ -10,9 +10,10 @@ function sortNumber(a,b)
 }
 
 function Main() {
-    console.log('1. 添加学生',
-        '2. 生成成绩单',
-        '3. 退出');
+    console.log( `1. 添加学生
+        2. 生成成绩单
+        3. 退出
+请输入你的选择（1～3）：`);
     let scanf = require('scanf');
     let str = scanf("%d");
     if(str === 1) {
@@ -108,4 +109,4 @@ function Print() {
     console.log(expectText);
     Main();
 }
-module.exports = Main;
+module.exports = {Main};
